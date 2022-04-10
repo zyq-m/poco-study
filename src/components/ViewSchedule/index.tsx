@@ -31,9 +31,9 @@ const ViewSchedule = ({ handleClose }: any) => {
                   schedule.classes.map((subject: any) => {
                     return (
                       <div key={subject.id}>
-                        <ViewScheduleContainer>
-                          {subject.link.length < 5 ? (
-                            <a href="#">
+                        {subject.link.length < 5 ? (
+                          <a href="#">
+                            <ViewScheduleContainer>
                               <p className="mb-[9px] text-xs">{subject.code}</p>
                               <p className="mb-[9px] text-s font-medium">
                                 {subject.name}{" "}
@@ -41,9 +41,11 @@ const ViewSchedule = ({ handleClose }: any) => {
                               <p className="text-s">
                                 {subject.start} to {subject.end}
                               </p>
-                            </a>
-                          ) : (
-                            <a href={subject.link} target="_blank">
+                            </ViewScheduleContainer>
+                          </a>
+                        ) : (
+                          <a href={subject.link} target="_blank">
+                            <ViewScheduleContainer>
                               <p className="mb-[9px] text-xs">{subject.code}</p>
                               <p className="mb-[9px] text-s font-medium">
                                 {subject.name}{" "}
@@ -51,9 +53,9 @@ const ViewSchedule = ({ handleClose }: any) => {
                               <p className="text-s">
                                 {subject.start} to {subject.end}
                               </p>
-                            </a>
-                          )}
-                        </ViewScheduleContainer>
+                            </ViewScheduleContainer>
+                          </a>
+                        )}
                       </div>
                     );
                   })
