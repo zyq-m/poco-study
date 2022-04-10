@@ -42,10 +42,6 @@ export const fadeUp = {
       damping: 22,
     },
   },
-  exit: {
-    y: 60,
-    opacity: 0,
-  },
 };
 
 export const fadeOut = {
@@ -73,11 +69,9 @@ export const slideUp = {
     y: "0",
     opacity: 1,
     transition: {
-      duration: 0.3,
-      ease: "easeInOut",
       type: "spring",
       damping: 50,
-      stiffness: 800,
+      stiffness: 600,
     },
   },
   exit: {
