@@ -69,7 +69,7 @@ export const slideUp = {
     y: "0",
     opacity: 1,
     transition: {
-      duration: 0.3,
+      duration: 0.4,
       ease: "easeInOut",
       // type: "spring",
       // damping: 50,
