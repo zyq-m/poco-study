@@ -5,7 +5,7 @@ import uniqid from "uniqid";
 
 import { BackDrop, Form, OnTapHover } from "../../components";
 
-import { slideUp, fadeUp } from "../../animations";
+import { slideUp } from "../../animations";
 
 import {
   parseLocalStorage,
