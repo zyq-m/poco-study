@@ -7,7 +7,7 @@
     @apply p-5 rounded-2xl bg-light-white shadow-3xl;
   }
   .form {
-    @apply w-full px-[15px] py-[18px] box outline-none;
+    @apply w-full px-[15px] py-[18px] box shadow-none outline-none;
   }
   .form-wrapper {
     @apply grid gap-[9px];

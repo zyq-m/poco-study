@@ -5,7 +5,7 @@ import uniqid from "uniqid";
 
 import { BackDrop, Form, OnTapHover } from "../../components";
 
-import { fadeUp } from "../../animations";
+import { slideUp } from "../../animations";
 
 import {
   parseLocalStorage,
@@ -126,7 +126,7 @@ const ScheduleForm = ({ handleClose }: any) => {
     <BackDrop onClose={onClose} style="items-end px-0">
       <motion.section
         onClick={e => e.stopPropagation()}
-        variants={fadeUp}
+        variants={slideUp}
         initial="initial"
         animate="animate"
         exit="exit"
