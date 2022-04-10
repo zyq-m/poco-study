@@ -21,7 +21,7 @@ const Classes = () => {
               return (
                 <motion.div variants={popUp} key={subject.id}>
                   <OnTapHover>
-                    {subject.link.length === 0 ? (
+                    {subject.link.length < 5 ? (
                       <a href="#">
                         <div className="box">
                           <p className="text-s">{subject.name}</p>

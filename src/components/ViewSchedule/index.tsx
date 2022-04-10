@@ -32,13 +32,27 @@ const ViewSchedule = ({ handleClose }: any) => {
                     return (
                       <div key={subject.id}>
                         <ViewScheduleContainer>
-                          <p className="mb-[9px] text-xs">{subject.code}</p>
-                          <p className="mb-[9px] text-s font-medium">
-                            {subject.name}{" "}
-                          </p>
-                          <p className="text-s">
-                            {subject.start} to {subject.end}
-                          </p>
+                          {subject.link.length < 5 ? (
+                            <a href="#">
+                              <p className="mb-[9px] text-xs">{subject.code}</p>
+                              <p className="mb-[9px] text-s font-medium">
+                                {subject.name}{" "}
+                              </p>
+                              <p className="text-s">
+                                {subject.start} to {subject.end}
+                              </p>
+                            </a>
+                          ) : (
+                            <a href={subject.link} target="_blank">
+                              <p className="mb-[9px] text-xs">{subject.code}</p>
+                              <p className="mb-[9px] text-s font-medium">
+                                {subject.name}{" "}
+                              </p>
+                              <p className="text-s">
+                                {subject.start} to {subject.end}
+                              </p>
+                            </a>
+                          )}
                         </ViewScheduleContainer>
                       </div>
                     );
