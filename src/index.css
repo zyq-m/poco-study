@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box {
+    @apply p-5 rounded-2xl bg-light-white shadow-3xl;
+  }
+  .form {
+    @apply w-full px-[15px] py-[18px] box outline-none;
+  }
+  .form-wrapper {
+    @apply grid gap-[9px];
+  }
+  .btn {
+    @apply inline-block w-full text-s;
+  }
+  .fixed-w {
+    @apply max-w-lg mx-auto;
+  }
+}
+
+:root {
+  --gradient-color-1: #b8b7c5;
+  --gradient-color-2: #0b5d85;
+  --gradient-color-3: #0f334d;
+  --gradient-color-4: #0e1820;
+  --light-gray: #f3f3f3;
+  --white: rgb(255, 255, 255);
+  --bg-white: rgb(255, 255, 255, 0.12);
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    135deg,
+    var(--gradient-color-1),
+    var(--gradient-color-2),
+    var(--gradient-color-3),
+    var(--gradient-color-4)
+  );
+  color: var(--white);
+  background-size: 300%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+::placeholder {
+  color: var(--light-gray);
+  font-size: 14px;
+}
