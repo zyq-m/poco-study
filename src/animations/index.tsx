@@ -15,10 +15,8 @@ export const popUp = {
     scale: 1,
     opacity: 1,
     transition: {
-      type: "spring",
       duration: 0.4,
-      stiffness: 250,
-      damping: 22,
+      ease: "easeInOut",
     },
   },
   exit: {

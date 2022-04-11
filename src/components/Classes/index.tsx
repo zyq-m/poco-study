@@ -49,7 +49,7 @@ const Classes = () => {
           <div className="col-span-2">
             <OnTapHover>
               <div className="box">
-                <p className="text-s">Add timetable</p>
+                <p className="text-s">Add your timetable 👇</p>
               </div>
             </OnTapHover>
           </div>
@@ -58,7 +58,7 @@ const Classes = () => {
           <div className="col-span-2">
             <OnTapHover>
               <div className="box">
-                <p className="text-s">No classes for today</p>
+                <p className="text-s">No classes for today 😄</p>
               </div>
             </OnTapHover>
           </div>
