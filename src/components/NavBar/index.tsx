@@ -14,7 +14,7 @@ const NavBar = () => {
       <Link to="/">
         <SiRabbitmq />
       </Link>
-      <FiMenu className="w-5 h-5" />
+      {/* <FiMenu className="w-5 h-5" /> */}
     </motion.nav>
   );
 };
