@@ -75,7 +75,7 @@ const CreateSchedule = ({ scheduleId }: any) => {
     }
 
     const updateDetails = updateSchedules({
-      scheduleId: scheduleId && parseInt(scheduleId),
+      scheduleId: scheduleId,
       day: dayInput,
     });
 
