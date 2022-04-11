@@ -130,7 +130,7 @@ const ScheduleForm = ({ handleClose }: any) => {
         initial="initial"
         animate="animate"
         exit="exit"
-        className="max-w-sm mx-auto w-full px-4 py-[52px] rounded-t-2xl bg-gray-800"
+        className="fixed-w w-full px-4 py-[52px] rounded-t-2xl bg-gray-800"
       >
         <form onSubmit={handleSubmit}>
           <Form label="Name">
