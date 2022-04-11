@@ -5,23 +5,11 @@ module.exports = {
       center: true,
     },
     extend: {
-      dropShadow: {
-        "3xl": [
-          "0px 3.4px 2.7px rgba(0, 0, 0, 0.022)",
-          "0px 8.7px 6.9px rgba(0, 0, 0, 0.031)",
-          "0px 17.7px 14.2px rgba(0, 0, 0, 0.039)",
-          "0px 36.5px 29.2px rgba(0, 0, 0, 0.048)",
-          "0px 100px 80px rgba(0, 0, 0, 0.07)",
-        ],
-      },
-
       boxShadow: {
         "3xl": [
-          "0px 3.4px 2.7px rgba(0, 0, 0, 0.022)",
-          "0px 8.7px 6.9px rgba(0, 0, 0, 0.031)",
-          "0px 17.7px 14.2px rgba(0, 0, 0, 0.039)",
-          "0px 36.5px 29.2px rgba(0, 0, 0, 0.048)",
-          "0px 100px 80px rgba(0, 0, 0, 0.07)",
+          "6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028)",
+          "22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042)",
+          "100px 100px 80px rgba(0, 0, 0, 0.07)",
         ],
       },
 
