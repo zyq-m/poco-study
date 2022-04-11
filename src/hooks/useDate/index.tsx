@@ -10,8 +10,8 @@ const useDate = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      getDate();
-      getDay();
+      setDate(getDate());
+      setDay(getDay());
     }, 86400000);
   }, [date]);
 
