@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { MdOutlineClose, MdEdit } from "react-icons/md";
 
 import { BackDrop, IconMotionBtn } from "../../components";
@@ -8,10 +8,21 @@ import { popUp } from "../../animations";
 
 const ViewSchedule = ({ handleClose }: any) => {
   const { scheduleId } = useParams();
+  const navigate = useNavigate();
   const data = parseLocalStorage("scheduleDetails");
 
+  const onClose = () => {
+    handleClose();
+
+    scheduleId &&
+      setTimeout(() => {
+        handleClose();
+        navigate("/");
+      }, 100);
+  };
+
   return (
-    <BackDrop onClose={handleClose} style="items-center">
+    <BackDrop onClose={onClose} style="items-center">
       <motion.article
         onClick={e => e.stopPropagation()}
         variants={popUp}
@@ -68,7 +79,7 @@ const ViewSchedule = ({ handleClose }: any) => {
                 )}
                 <div className="flex justify-center gap-[14px] mt-5">
                   <IconMotionBtn>
-                    <MdOutlineClose onClick={handleClose} />
+                    <MdOutlineClose onClick={onClose} />
                   </IconMotionBtn>
                   <IconMotionBtn>
                     <Link to={`/${scheduleId}/editSchedule`}>
