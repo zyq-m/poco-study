@@ -4,7 +4,7 @@ import { MdOutlineClose, MdEdit } from "react-icons/md";
 
 import { BackDrop, IconMotionBtn } from "../../components";
 import { parseLocalStorage } from "../../helper";
-import { popUp } from "../../animations";
+import { fadeOut } from "../../animations";
 
 const ViewSchedule = ({ handleClose }: any) => {
   const { scheduleId } = useParams();
@@ -25,7 +25,7 @@ const ViewSchedule = ({ handleClose }: any) => {
     <BackDrop onClose={onClose} style="items-center">
       <motion.article
         onClick={e => e.stopPropagation()}
-        variants={popUp}
+        variants={fadeOut}
         initial="initial"
         animate="animate"
         exit="exit"

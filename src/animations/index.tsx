@@ -44,17 +44,18 @@ export const fadeUp = {
 
 export const fadeOut = {
   initial: {
-    y: 10,
     opacity: 0,
   },
   animate: {
-    y: 0,
     opacity: 1,
 
     transition: {
-      duration: 0.3,
+      duration: 0.2,
       ease: "easeInOut",
     },
+  },
+  exit: {
+    opacity: 0,
   },
 };
 
