@@ -4,7 +4,7 @@
 
 @layer components {
   .box {
-    @apply p-5 rounded-2xl bg-light-white shadow-3xl;
+    @apply p-5 rounded-2xl bg-light-white;
   }
   .form {
     @apply w-full px-[15px] py-[18px] box shadow-none outline-none;
