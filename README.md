@@ -37,10 +37,13 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone or download this repo
 2. Install dependencies
+
    ```sh
    npm install
    ```
+   
 3. Run on localhost
+   
    ```sh
    npm run dev
    ```
